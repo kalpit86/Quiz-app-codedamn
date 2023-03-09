@@ -225,7 +225,7 @@ body{
       height: fit-content;
     }
     .player h2,p{
-      font-size: 4px;
+      font-size: 8px;
     }
 
     #scoreBoard{
@@ -240,7 +240,7 @@ body{
     }
 
     #scoreBoard button{
-      font-size: 4px;
+      font-size: 8px;
     }
     
     #goBack{
@@ -263,7 +263,7 @@ body{
 
     #questionTab h2{
       margin: 10px auto 10px;
-      font-size: 5px;
+      font-size: 8px;
     }
 
     #quizEnd{
@@ -276,7 +276,7 @@ body{
     #quizEnd h2{
       text-align: center;
       margin: 10px auto 10px;
-      font-size: 5px;
+      font-size: 8px;
     }
 
     #quizEnd input{
