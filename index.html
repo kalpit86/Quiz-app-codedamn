@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="navbar">
+      <p id ="highscore">View Highscore <i class="fas fa-hand-point-left fa-lg"></i></p>
+      <p class="time">Time:</p>
+    </div>
+    <div class="player">
+      <h2>Coding Quiz Challenge</h2>
+      <p>Try to answer the following code related questions within the time limit.</p>
+      <p>Keep in mind that incorrect answer will penalize your score/time by ten seconds!</p>
+      <button id="start">Start Quiz</button>  
+    </div>
+
+    <div id="questionTab" class="hidden">
+      <h2 class="question"></h2>
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+      <p id="result"></p>
+      <button id="next" class="hidden">Next</button>
+    </div>
+
+    <div id="quizEnd" class="hidden">
+      <h2>All Done!</h2>
+      <p>Your final score is <span id="score"></span></p>
+      <label for="input">Enter initials:</label>
+      <input type="text" id="initials">
+      <button id="submit">Submit</button>  
+    </div>
+
+    <div id="scoreBoard" class="hidden">
+      <h2>Highscores</h2>
+      <p id="savedScores"></p>
+      <button id="goBack">Go Back</button>
+      <button id="clearScore">Clear Highscores</button>    
+    </div>
+ <script src="app.js"></script>
+</body>
+</html>
