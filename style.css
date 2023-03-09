@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -36,7 +41,7 @@ body{
     border-radius: 30px;
     padding: 20px;
     width: 50%;
-    height: 33%;
+    height: 35%;
     margin: 200px auto;
     background-color: #ffffff; 
     border: 2px #c0c0c0 solid;  
@@ -68,8 +73,8 @@ body{
   border-radius: 30px;
   padding: 10px;
   width: 54%;
-  height: 50%;
-  margin: 180px auto;
+  height: 52%;
+  margin: 140px auto;
   background-color: #ffffff; 
   border: 2px #c0c0c0 solid;  
   box-shadow: 10px 5px 5px lightgray;
@@ -80,7 +85,7 @@ body{
 #questionTab h2{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
-  margin: 40px auto 10px;
+  margin: 24px auto 10px;
   font-weight: bolder;
   /*border:1px black dotted;*/
 }
@@ -199,4 +204,84 @@ body{
   color: white;
   background-color: #218380;
   cursor:pointer;
+}
+
+@media only screen and (max-width: 780px){
+
+    #highscore{
+       padding-top: 0px;
+       padding-bottom: 10px;
+    }
+
+    .navbar {
+      height: 40px;
+      display:block;
+      color: white;
+    }
+    
+    .player{
+      margin: 50px auto;
+      width: 75%;
+      height: fit-content;
+    }
+    .player h2,p{
+      font-size: 1px;
+    }
+
+    #scoreBoard{
+      margin: 50px auto;
+      width: 75%;
+      height: fit-content;
+      align-items: center;
+    }
+
+    #scoreBoard h2{
+      margin:  auto 10px;
+    }
+
+    #scoreBoard button{
+      font-size: 1px;
+    }
+    
+    #goBack{
+      border: 1px black dotted;
+      width: 68%;
+       margin-bottom: 4px;
+       margin-left: 15%;
+       margin-right: 15%;
+    }
+
+    #clearScore{
+      margin-top: 0px;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    #questionTab{
+      margin: 50px auto;
+      width: 75%;
+      height: fit-content;
+    }
+
+    #questionTab h2{
+      margin: 10px auto 10px;
+      font-size: 2px;
+    }
+
+    #quizEnd{
+      text-align: center;
+      margin: 50px auto;
+      width: 75%;
+      height: fit-content;
+    }
+
+    #quizEnd h2{
+      text-align: center;
+      margin: 10px auto 10px;
+      font-size: 2px;
+    }
+
+    #quizEnd input{
+      margin: 8px; 
+    }
+
 }
